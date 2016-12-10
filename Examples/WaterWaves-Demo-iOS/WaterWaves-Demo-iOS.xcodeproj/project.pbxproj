@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F47944381DFC20BA006DF324 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F47944371DFC20BA006DF324 /* LICENSE */; };
+		F4A582BE1DF8A1CF001FCC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A582BD1DF8A1CF001FCC2A /* AppDelegate.swift */; };
+		F4A582C81DF8A1CF001FCC2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A582C61DF8A1CF001FCC2A /* LaunchScreen.storyboard */; };
+		F4A582FB1DF8A66B001FCC2A /* DARGLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A582F81DF8A66B001FCC2A /* DARGLabelView.swift */; };
+		F4A582FC1DF8A66B001FCC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A582F91DF8A66B001FCC2A /* ViewController.swift */; };
+		F4A582FD1DF8A66B001FCC2A /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A582FA1DF8A66B001FCC2A /* WaveViewController.swift */; };
+		F4A5830A1DF8A750001FCC2A /* SDGWaterWaves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A583091DF8A750001FCC2A /* SDGWaterWaves.framework */; };
+		F4A5830B1DF8A750001FCC2A /* SDGWaterWaves.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4A583091DF8A750001FCC2A /* SDGWaterWaves.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4A583141DF98B78001FCC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A583131DF98B78001FCC2A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4A5830C1DF8A750001FCC2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4A5830B1DF8A750001FCC2A /* SDGWaterWaves.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F47944371DFC20BA006DF324 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "/Users/simon/Xcode Git Repo/WaterWaves/SDGWaterWaves/SDGWaterWaves/../../LICENSE"; sourceTree = "<absolute>"; };
+		F4A582BA1DF8A1CF001FCC2A /* WaterWaves-Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterWaves-Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A582BD1DF8A1CF001FCC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4A582C71DF8A1CF001FCC2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4A582C91DF8A1CF001FCC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A582F81DF8A66B001FCC2A /* DARGLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DARGLabelView.swift; path = ../../Shared/DARGLabelView.swift; sourceTree = "<group>"; };
+		F4A582F91DF8A66B001FCC2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Shared/ViewController.swift; sourceTree = "<group>"; };
+		F4A582FA1DF8A66B001FCC2A /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaveViewController.swift; path = ../../Shared/WaveViewController.swift; sourceTree = "<group>"; };
+		F4A583091DF8A750001FCC2A /* SDGWaterWaves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDGWaterWaves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A583131DF98B78001FCC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Shared/Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4A582B71DF8A1CF001FCC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A5830A1DF8A750001FCC2A /* SDGWaterWaves.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4A582B11DF8A1CF001FCC2A = {
+			isa = PBXGroup;
+			children = (
+				F4A582BC1DF8A1CF001FCC2A /* WaterWaves-Demo-iOS */,
+				F4A582BB1DF8A1CF001FCC2A /* Products */,
+				F4A5830D1DF8A758001FCC2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4A582BB1DF8A1CF001FCC2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4A582BA1DF8A1CF001FCC2A /* WaterWaves-Demo-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4A582BC1DF8A1CF001FCC2A /* WaterWaves-Demo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4A582BD1DF8A1CF001FCC2A /* AppDelegate.swift */,
+				F4A582F91DF8A66B001FCC2A /* ViewController.swift */,
+				F4A582F81DF8A66B001FCC2A /* DARGLabelView.swift */,
+				F4A582FA1DF8A66B001FCC2A /* WaveViewController.swift */,
+				F47944371DFC20BA006DF324 /* LICENSE */,
+				F4A583131DF98B78001FCC2A /* Assets.xcassets */,
+				F4A582C61DF8A1CF001FCC2A /* LaunchScreen.storyboard */,
+				F4A582C91DF8A1CF001FCC2A /* Info.plist */,
+			);
+			path = "WaterWaves-Demo-iOS";
+			sourceTree = "<group>";
+		};
+		F4A5830D1DF8A758001FCC2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4A583091DF8A750001FCC2A /* SDGWaterWaves.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4A582B91DF8A1CF001FCC2A /* WaterWaves-Demo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4A582CC1DF8A1CF001FCC2A /* Build configuration list for PBXNativeTarget "WaterWaves-Demo-iOS" */;
+			buildPhases = (
+				F4A582B61DF8A1CF001FCC2A /* Sources */,
+				F4A582B71DF8A1CF001FCC2A /* Frameworks */,
+				F4A582B81DF8A1CF001FCC2A /* Resources */,
+				F4A5830C1DF8A750001FCC2A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaterWaves-Demo-iOS";
+			productName = "WaterWaves-Demo-iOS";
+			productReference = F4A582BA1DF8A1CF001FCC2A /* WaterWaves-Demo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4A582B21DF8A1CF001FCC2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "☠️👽🤖👻";
+				TargetAttributes = {
+					F4A582B91DF8A1CF001FCC2A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F4A582B51DF8A1CF001FCC2A /* Build configuration list for PBXProject "WaterWaves-Demo-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4A582B11DF8A1CF001FCC2A;
+			productRefGroup = F4A582BB1DF8A1CF001FCC2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4A582B91DF8A1CF001FCC2A /* WaterWaves-Demo-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4A582B81DF8A1CF001FCC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47944381DFC20BA006DF324 /* LICENSE in Resources */,
+				F4A583141DF98B78001FCC2A /* Assets.xcassets in Resources */,
+				F4A582C81DF8A1CF001FCC2A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4A582B61DF8A1CF001FCC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A582BE1DF8A1CF001FCC2A /* AppDelegate.swift in Sources */,
+				F4A582FC1DF8A66B001FCC2A /* ViewController.swift in Sources */,
+				F4A582FB1DF8A66B001FCC2A /* DARGLabelView.swift in Sources */,
+				F4A582FD1DF8A66B001FCC2A /* WaveViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4A582C61DF8A1CF001FCC2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4A582C71DF8A1CF001FCC2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4A582CA1DF8A1CF001FCC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = " [sleepdefic1t](https://github.com/sleepdefic1t) ";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4A582CB1DF8A1CF001FCC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_OWNER = " [sleepdefic1t](https://github.com/sleepdefic1t) ";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4A582CD1DF8A1CF001FCC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WaterWaves-Demo-iOS/Info.plist";
+				INSTALL_OWNER = " [sleepdefic1t](https://github.com/sleepdefic1t) ";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.darg.WaterWaves-Demo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F4A582CE1DF8A1CF001FCC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WaterWaves-Demo-iOS/Info.plist";
+				INSTALL_OWNER = " [sleepdefic1t](https://github.com/sleepdefic1t) ";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.darg.WaterWaves-Demo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4A582B51DF8A1CF001FCC2A /* Build configuration list for PBXProject "WaterWaves-Demo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A582CA1DF8A1CF001FCC2A /* Debug */,
+				F4A582CB1DF8A1CF001FCC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4A582CC1DF8A1CF001FCC2A /* Build configuration list for PBXNativeTarget "WaterWaves-Demo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A582CD1DF8A1CF001FCC2A /* Debug */,
+				F4A582CE1DF8A1CF001FCC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4A582B21DF8A1CF001FCC2A /* Project object */;
+}

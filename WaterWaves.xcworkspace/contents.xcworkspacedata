@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SDGWaterWaves/SDGWaterWaves/SDGWaterWaves.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Examples">
+      <Group
+         location = "container:"
+         name = "Shared">
+         <FileRef
+            location = "group:SDGWaterWaves/SDGWaterWaves/../../LICENSE">
+         </FileRef>
+         <FileRef
+            location = "group:Examples/Shared/DARGLabelView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Examples/Shared/ViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Examples/Shared/WaveViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Examples/Shared/Assets.xcassets">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Examples/WaterWaves-Demo-macOS/WaterWaves-Demo-macOS.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Examples/WaterWaves-Demo-iOS/WaterWaves-Demo-iOS.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
