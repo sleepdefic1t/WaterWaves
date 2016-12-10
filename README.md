@@ -23,10 +23,15 @@ var waveController: WaveController = WaveController()
 ##### Insertion
 ```swift
 override public func viewDidLoad() { 
-super.viewDidLoad() 
-wave.setup(in: view)
+
+  super.viewDidLoad() 
+  wave.setup(in: view)
+  
 }
 ```
+
+-
+
 
 #### Usage
 
@@ -34,12 +39,21 @@ wave.setup(in: view)
 
 - macOS / OSX
 ```swift
-override func scrollWheel(with event: NSEvent) { waveController.swell(wave, with: event) waveController.start(wave) }
+override func scrollWheel(with event: NSEvent) {
+
+  waveController.swell(wave, with: event)
+  waveController.start(wave)
+  
+}
 ```
 
 - iOS
 ```swift
-public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) { waveController.swell(wave, with: event!) }
+public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+  waveController.swell(wave, with: event!)
+  
+}
 ```
 
 ##### Waving
@@ -47,6 +61,8 @@ public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
 ```swift
 waveController.roll(wave)
 ```
+
+-
 
 
 ## To Do
@@ -65,20 +81,30 @@ waveController.roll(wave)
 
 ## Acknowledgments
 
-[marty-suzuki](https://github.com/marty-suzuki)
-- [SAWaveToast](https://github.com/marty-suzuki/SAWaveToast)
+>[marty-suzuki](https://github.com/marty-suzuki)
+>- [SAWaveToast](https://github.com/marty-suzuki/SAWaveToast)
+
+--
 
 
 ## Suggested Resources
 
-[Awesome-iOS](https://github.com/vsouza/awesome-ios)
-- THE best list of awesome iOS Open-Source Objective-C and Swift Projects by [vsouza](https://github.com/vsouza)
+> [Awesome-iOS](https://github.com/vsouza/awesome-ios)
+> - THE best list of awesome iOS Open-Source Objective-C and Swift Projects by [vsouza](https://github.com/vsouza)
 
-[Build Time Analyzer for Xcode](https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode)
-- Exellent Swift Build-Time Analyzer for Xcode by [RobertGummeson](https://github.com/RobertGummesson)
+--
 
-[Natasha the Robot](https://github.com/natashatherobot) - [natashatherobot.com](https://www.natashatherobot.com)
-- World-Class Swift Blogger/Developer/Speaker. 
+
+> [Build Time Analyzer for Xcode](https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode)
+> - Exellent Swift Build-Time Analyzer for Xcode by [RobertGummeson](https://github.com/RobertGummesson)
+
+--
+
+
+> [Natasha the Robot](https://github.com/natashatherobot) - [natashatherobot.com](https://www.natashatherobot.com)
+> - World-Class Swift Blogger/Developer/Speaker. 
+
+--
 
 
 ## About
