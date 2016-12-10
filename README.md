@@ -14,48 +14,50 @@ Swift 3.0 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBo
 ### Setup
 
 ##### Declaration
+
 > ```swift
 > var wave: Wave = Wave()
 > var waveController: WaveController = WaveController()
 > ```
 
 ##### Insertion
+
 > ```swift
-> override public func viewDidLoad() {
-> 
+>override public func viewDidLoad() {
+>
 >     super.viewDidLoad() 
 >     wave.setup(in: view)
 >   
 > }
 > ```
 
--
+--
 
 
 #### Usage
 
-##### Scrolling
-
-- macOS / OSX
-> ```swift
-> override func scrollWheel(with event: NSEvent) {
-> 
->     waveController.swell(wave, with: event)
->     waveController.start(wave)
+- Scrolling  
+>  - macOS / OSX  
+>```swift
+> override func scrollWheel(with event: NSEvent) {  
 >   
-> }
->```
-
-- iOS
+>     waveController.swell(wave, with: event)  
+>     waveController.start(wave)  
+>     
+> }  
+> ```
+> --- 
+>  - iOS  
 > ```swift
 > public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 > 
 >    waveController.swell(wave, with: event!)
 >   
-> }
->```
+> }  
+> ```
+> ---
 
-##### Waving
+- Waving
 
 > ```swift
 > waveController.roll(wave)
