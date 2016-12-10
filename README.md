@@ -14,21 +14,20 @@ Swift 3.0 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBo
 ### Setup
 
 ##### Declaration
-
-```swift
-var wave: Wave = Wave()
-var waveController: WaveController = WaveController()
-```
+> ```swift
+> var wave: Wave = Wave()
+> var waveController: WaveController = WaveController()
+> ```
 
 ##### Insertion
-```swift
-override public func viewDidLoad() { 
-
-  super.viewDidLoad() 
-  wave.setup(in: view)
-  
-}
-```
+> ```swift
+> override public func viewDidLoad() {
+> 
+>     super.viewDidLoad() 
+>     wave.setup(in: view)
+>   
+> }
+> ```
 
 -
 
@@ -38,29 +37,29 @@ override public func viewDidLoad() {
 ##### Scrolling
 
 - macOS / OSX
-```swift
-override func scrollWheel(with event: NSEvent) {
-
-  waveController.swell(wave, with: event)
-  waveController.start(wave)
-  
-}
-```
+> ```swift
+> override func scrollWheel(with event: NSEvent) {
+> 
+>     waveController.swell(wave, with: event)
+>     waveController.start(wave)
+>   
+> }
+>```
 
 - iOS
-```swift
-public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-
-  waveController.swell(wave, with: event!)
-  
-}
-```
+> ```swift
+> public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+> 
+>    waveController.swell(wave, with: event!)
+>   
+> }
+>```
 
 ##### Waving
 
-```swift
-waveController.roll(wave)
-```
+> ```swift
+> waveController.roll(wave)
+> ```
 
 -
 
