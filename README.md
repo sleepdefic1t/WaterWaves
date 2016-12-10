@@ -45,8 +45,7 @@ Swift 3.0 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBo
 >     waveController.start(wave)  
 >     
 > }  
-> ```
-> --- 
+> ``` 
 >  - iOS  
 > ```swift
 > public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,7 +54,6 @@ Swift 3.0 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBo
 >   
 > }  
 > ```
-> ---
 
 - Waving
 
