@@ -1,11 +1,12 @@
 # WaterWaves
 
-Swift 3.0 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBoards -
+Swift 3.1 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBoards -
 
-[![Swift Version](https://img.shields.io/badge/swift-3.0-orange.svg?style=flat)](https://github.com/apple/swift)
-![cross-platform](https://img.shields.io/badge/cross--platform-Apple-blue.svg?style=flat)
-![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)
-![Platform](https://img.shields.io/badge/platform-macOS-blue.svg?style=flat)
+[![Swift Version](https://img.shields.io/badge/swift-3.1-brightgreen.svg?style=flat)](https://github.com/apple/swift)
+[![Xcode Version](https://img.shields.io/badge/xcode-8.3-brightgreen.svg?style=flat)](https://developer.apple.com/xcode/)
+![cross-platform](https://img.shields.io/badge/cross--platform-Apple-brightgreen.svg?style=flat)
+![Platform](https://img.shields.io/badge/platform-iOS-brightgreen.svg?style=flat)
+![Platform](https://img.shields.io/badge/platform-macOS-brightgreen.svg?style=flat)
 [![BUILD](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat)](https://github.com/deadAlienRobotGhost/WaterWaves)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-brightgreen.svg?style=flat)](http://creativecommons.org/licenses/by-sa/4.0/)
 
