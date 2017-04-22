@@ -10,10 +10,8 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    
     var window: NSWindow = Window()
     var windowController: NSWindowController = NSWindowController()
-    
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
@@ -22,6 +20,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.contentView = window.contentViewController?.view
         
     }
-    
     
 }

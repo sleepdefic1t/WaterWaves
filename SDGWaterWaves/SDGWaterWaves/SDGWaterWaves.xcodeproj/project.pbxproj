@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42DCD8E1EAB5E7C00AA3F17 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F42DCD8D1EAB5E7C00AA3F17 /* README.md */; };
 		F47944311DFC1F9E006DF324 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F47944301DFC1F9E006DF324 /* LICENSE */; };
 		F47944321DFC1F9E006DF324 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F47944301DFC1F9E006DF324 /* LICENSE */; };
 		F4A582881DF89DC4001FCC2A /* SDGWaterWaves-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A582861DF89DC4001FCC2A /* SDGWaterWaves-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F42DCD8D1EAB5E7C00AA3F17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = SOURCE_ROOT; };
 		F47944301DFC1F9E006DF324 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		F4A582841DF89DC4001FCC2A /* SDGWaterWaves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDGWaterWaves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A582861DF89DC4001FCC2A /* SDGWaterWaves-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDGWaterWaves-iOS.h"; sourceTree = "<group>"; };
@@ -66,10 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				F4A582761DF89DAB001FCC2A /* SDGWaterWaves */,
-				F47944301DFC1F9E006DF324 /* LICENSE */,
 				F4A582921DF89DDB001FCC2A /* SDGWaterWaves-macOS */,
 				F4A582851DF89DC4001FCC2A /* SDGWaterWaves-iOS */,
 				F4A582751DF89DAB001FCC2A /* Products */,
+				F47944301DFC1F9E006DF324 /* LICENSE */,
+				F42DCD8D1EAB5E7C00AA3F17 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,11 +211,11 @@
 					F4A582831DF89DC4001FCC2A = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F4A582901DF89DDB001FCC2A = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -279,6 +282,7 @@
 				F4A5829D1DF89EE7001FCC2A /* Datum.swift in Sources */,
 				F4A582AC1DF8A0F8001FCC2A /* TidePath.swift in Sources */,
 				F4A582A31DF89F40001FCC2A /* Tides.swift in Sources */,
+				F42DCD8E1EAB5E7C00AA3F17 /* README.md in Sources */,
 				F4A582A61DF89F8C001FCC2A /* WaveController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.darg.SDGWaterWaves-iOS";
 				PRODUCT_NAME = SDGWaterWaves;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -427,6 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.darg.SDGWaterWaves-iOS";
 				PRODUCT_NAME = SDGWaterWaves;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};

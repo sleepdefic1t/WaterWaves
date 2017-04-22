@@ -6,22 +6,18 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
 #if os(iOS)
     import UIKit
 #elseif os(macOS)
     import Cocoa
 #endif
 
-
 public struct Tides {
-    
     
     public var layer: CAShapeLayer = CAShapeLayer()
     
     internal var front: CAShapeLayer = CAShapeLayer()
     internal var back: CAShapeLayer = CAShapeLayer()
-    
     
     public init() {
         
@@ -38,12 +34,9 @@ public struct Tides {
         
     }
     
-    
 }
 
-
 extension Tides {
-    
     
     public func update(for wave: Wave) {
         
@@ -51,6 +44,5 @@ extension Tides {
         back.path = TidePath(for: .back, wave).mutablePath
         
     }
-    
     
 }

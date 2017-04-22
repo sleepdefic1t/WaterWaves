@@ -6,24 +6,19 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
 #if os(iOS)
     import UIKit
 #elseif os(macOS)
     import Cocoa
 #endif
 
-
-
-public class WaveController {
+open class WaveController {
     
     public init() {}
     
 }
 
-
 extension WaveController {
-    
     
     public func start(_ wave: Wave) {
         
@@ -32,19 +27,15 @@ extension WaveController {
         
     }
     
-    
     internal func update(_ wave: Wave) {
         
         wave.tides.update(for: wave)
         
     }
     
-    
 }
 
-
 extension WaveController {
-    
     
     public func updateConstraints(for wave: Wave) {
         
@@ -61,20 +52,15 @@ extension WaveController {
             
             wave.tides.layer.frame.size = wave.view.frame.size
             
-            move(wave: wave, to: newLevel, duration: 0)
+            move(wave, to: newLevel, duration: 0)
             
         }
         
     }
     
-    
 }
 
-
-
 extension WaveController {
-    
-    
     
     func roll(_ wave: Wave, _ step: CGFloat? = nil, _ limit: CGFloat? = nil) {
         
@@ -117,7 +103,6 @@ extension WaveController {
         
     }
     
-    
     public func swell(_ wave: Wave, with event: NSUIEvent) {
         
         #if os(iOS)
@@ -138,13 +123,12 @@ extension WaveController {
         
         guard newLevel > 20 && newLevel < wave.view.frame.height-20 else { return }
         
-        move(wave: wave, to: newLevel)
+        move(wave, to: newLevel)
         start(wave)
         
     }
     
-    
-    internal func move(wave: Wave, to newLevel: CGFloat, duration: Double? = 2.0) {
+    internal func move(_ wave: Wave, to newLevel: CGFloat, duration: Double? = 2.0) {
         
         CATransaction.begin()
         
@@ -174,6 +158,5 @@ extension WaveController {
         CATransaction.commit()
         
     }
-    
     
 }

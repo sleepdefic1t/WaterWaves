@@ -6,19 +6,15 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
-public class Wave {
+open class Wave {
     
-    
-    public var datum: Datum = Datum()
-    public var tides: Tides = Tides()
-    public var view: NSUIView = NSUIView()
-    
+    open var datum: Datum = Datum()
+    open var tides: Tides = Tides()
+    open var view: NSUIView = NSUIView()
     
     public init() {}
     
-    
-    public func setup(in view: NSUIView) {
+    open func setup(in view: NSUIView) {
         
         self.view.frame = view.frame
         tides.layer.frame.size = view.frame.size
@@ -47,6 +43,5 @@ public class Wave {
         view.addSubview(self.view)
         
     }
-    
     
 }

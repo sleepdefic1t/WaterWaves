@@ -6,19 +6,15 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
 #if os(iOS)
     import UIKit
 #elseif os(macOS)
     import Cocoa
 #endif
 
-
 import SDGWaterWaves
 
-
-public class DARGLabelView: NSUIView {
-    
+open class DARGLabelView: NSUIView {
     
     var dargLabel: CATextLayer {
         
@@ -27,32 +23,29 @@ public class DARGLabelView: NSUIView {
         label.foregroundColor = NSUIColor.black.cgColor
         label.alignmentMode = "right"
         
-        #if os(iOS)
-            
-            label.fontSize = 50
-            label.frame.size = CGSize(width: 145, height: 240)
-            
-        #elseif os(macOS)
-            
-            label.fontSize = 30
-            label.frame.size = CGSize(width: 100, height: 150)
-            
-        #endif
+    #if os(iOS)
         
+        label.fontSize = 50
+        label.frame.size = CGSize(width: 145, height: 240)
+        
+    #elseif os(macOS)
+        
+        label.fontSize = 30
+        label.frame.size = CGSize(width: 100, height: 150)
+        
+    #endif
+    
         return label
         
     }
     
-    
 }
-
 
 extension DARGLabelView {
     
+#if os(macOS)
     
-    #if os(macOS)
-    
-    override public func viewWillMove(toSuperview newSuperview: NSView?) {
+    override open func viewWillMove(toSuperview newSuperview: NSView?) {
         
         wantsLayer = true
         layer?.backgroundColor = NSColor.clear.cgColor
@@ -61,48 +54,43 @@ extension DARGLabelView {
         
     }
     
-    #elseif os(iOS)
+#elseif os(iOS)
     
-    override public func willMove(toSuperview newSuperview: UIView?) {
+    override open func willMove(toSuperview newSuperview: UIView?) {
     
-    backgroundColor = .clear
-    isUserInteractionEnabled = false
-    layer.addSublayer(dargLabel)
-    
-    updateConstraints()
+        backgroundColor = .clear
+        isUserInteractionEnabled = false
+        layer.addSublayer(dargLabel)
+        updateConstraints()
+        
     }
     
-    #endif
-    
+#endif
     
 }
 
 extension DARGLabelView {
     
-    
-    override public func updateConstraints() {
+    override open func updateConstraints() {
         super.updateConstraints()
-        
         
         frame.size = dargLabel.frame.size
         
-        #if os(iOS)
-            
-            let screen: CGRect = UIScreen.main.bounds
-            bounds = screen
-            frame.origin.x = screen.maxX - 150
-            frame.origin.y = screen.maxY - 250
-            
-        #elseif os(macOS)
-            
-            guard let superFrame: CGRect = superview?.frame else { return }
-            frame.origin.x = superFrame.maxX - frame.width-5
-            frame.origin.y = superFrame.minY
-            
-        #endif
+    #if os(iOS)
         
+        let screen: CGRect = UIScreen.main.bounds
+        bounds = screen
+        frame.origin.x = screen.maxX - 150
+        frame.origin.y = screen.maxY - 250
+        
+    #elseif os(macOS)
+        
+        guard let superFrame: CGRect = superview?.frame else { return }
+        frame.origin.x = superFrame.maxX - frame.width-5
+        frame.origin.y = superFrame.minY
+        
+    #endif
         
     }
-    
     
 }

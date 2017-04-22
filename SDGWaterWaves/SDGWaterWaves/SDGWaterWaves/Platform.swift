@@ -12,9 +12,7 @@
     import Cocoa
 #endif
 
-
 #if os(macOS)
-
     
     import Cocoa
     
@@ -26,11 +24,9 @@
     public typealias NSUIViewController = NSViewController
 
     public typealias NSUITouch = NSTouch
-    
 
 #elseif os(iOS)
     
-
     import UIKit
     
     public typealias NSUIColor = UIColor
@@ -41,6 +37,5 @@
     public typealias NSUIViewController = UIViewController
     
     public typealias NSUITouch = UITouch
-    
     
 #endif

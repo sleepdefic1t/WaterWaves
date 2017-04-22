@@ -6,16 +6,13 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
 #if os(iOS)
     import UIKit
 #elseif os(macOS)
     import Cocoa
 #endif
 
-
 import SDGWaterWaves
-
 
 class WaveViewController: NSUIViewController, NSUIGestureRecognizerDelegate {
     
@@ -27,53 +24,47 @@ class WaveViewController: NSUIViewController, NSUIGestureRecognizerDelegate {
 
 extension WaveViewController {
     
-    
     override public func loadView() {
         
-        #if os(macOS)
-            
-            view = NSView(frame: NSRect(x: 0, y: 0, width: 600, height: 300))
-            view.wantsLayer = true
-            view.layer?.backgroundColor = NSColor.cyan.withAlphaComponent(0.3).cgColor
-            
-        #elseif os(iOS)
-            
-            view = UIView(frame: UIScreen.main.bounds)
-            view.backgroundColor = UIColor.cyan.withAlphaComponent(0.3)
-            
-        #endif
+    #if os(macOS)
+        
+        view = NSView(frame: NSRect(x: 0, y: 0, width: 600, height: 300))
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor.cyan.withAlphaComponent(0.3).cgColor
+        
+    #elseif os(iOS)
+        
+        view = UIView(frame: UIScreen.main.bounds)
+        view.backgroundColor = UIColor.cyan.withAlphaComponent(0.3)
+        
+    #endif
         
     }
-    
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         
         wave.setup(in: view)
         
+    #if os(macOS)
         
-        #if os(macOS)
-            
-            view.addSubview(dargLabelView,
-                            positioned: .below,
-                            relativeTo: wave.view)
-            
-        #elseif os(iOS)
-            
-            view.insertSubview(dargLabelView as UIView, at: 0)
-            
-        #endif
+        view.addSubview(dargLabelView,
+                        positioned: .below,
+                        relativeTo: wave.view)
+        
+    #elseif os(iOS)
+        
+        view.insertSubview(dargLabelView as UIView, at: 0)
+        
+    #endif
         
     }
     
-    
 }
-
 
 extension WaveViewController {
     
-    #if os(macOS)
-    
+#if os(macOS)
     
     override func viewWillLayout() {
         super.viewWillLayout()
@@ -84,7 +75,7 @@ extension WaveViewController {
         
     }
     
-    #elseif os(iOS)
+#elseif os(iOS)
     
     public override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -95,16 +86,13 @@ extension WaveViewController {
         
     }
     
-    #endif
+#endif
     
 }
 
-
-
-
 extension WaveViewController {
     
-    #if os(macOS)
+#if os(macOS)
     
     override func scrollWheel(with event: NSEvent) {
         
@@ -113,14 +101,14 @@ extension WaveViewController {
         
     }
     
-    #elseif os(iOS)
+#elseif os(iOS)
     
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     
-    waveController.swell(wave, with: event!)
+        waveController.swell(wave, with: event!)
     
     }
     
-    #endif
+#endif
     
 }

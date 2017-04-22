@@ -6,16 +6,13 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
 #if os(iOS)
     import UIKit
 #elseif os(macOS)
     import Cocoa
 #endif
 
-
 import SDGWaterWaves
-
 
 class ViewController: NSUIViewController {
     
@@ -24,7 +21,6 @@ class ViewController: NSUIViewController {
 }
 
 extension ViewController {
-    
     
     override func loadView() {
         
@@ -44,7 +40,6 @@ extension ViewController {
         
     }
     
-    
     override func viewDidLoad() {
         
         waveViewController = WaveViewController()
@@ -57,17 +52,16 @@ extension ViewController {
         
     }
     
-    
     #if os(iOS)
     
     override func viewWillLayoutSubviews() {
-    
-    view.subviews.forEach({ subview in
-    
-    subview.autoresizingMask = view.autoresizingMask
-    subview.translatesAutoresizingMaskIntoConstraints = false
-    
-    })
+        
+        view.subviews.forEach({ subview in
+        
+            subview.autoresizingMask = view.autoresizingMask
+            subview.translatesAutoresizingMaskIntoConstraints = false
+        
+        })
     
     }
     

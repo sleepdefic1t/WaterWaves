@@ -6,19 +6,15 @@
 //  Copyright © 2016 [☠️👽🤖👻](https://github.com/deadAlienRobotGhost). All rights reserved.
 //
 
-
 #if os(iOS)
     import UIKit
 #elseif os(macOS)
     import Cocoa
 #endif
 
-
 public struct TidePath {
     
-    
     public var mutablePath: CGMutablePath!
-    
     
     public init(for type: WaveType, _ wave: Wave) {
         
@@ -47,7 +43,7 @@ public struct TidePath {
             // Use a parable to scale the sinus wave, that has its peak in the middle of the view.
             let scaling = -pow(1 / mid * (x - mid), 2) + 1
             
-            let cycle: CGFloat = CGFloat(2 * M_PI) * (x / width) *  wave.datum.frequency + phaseDX
+            let cycle: CGFloat = CGFloat(2 * CGFloat.pi) * (x / width) *  wave.datum.frequency + phaseDX
             
             let y = scaling * maxAmplitude * normedAmplitude * CGFloat(sinf(Float(cycle)))
             
@@ -65,10 +61,8 @@ public struct TidePath {
         path.addLine(to: CGPoint(x: 0, y:  wave.tides.layer.frame.maxY+20))
         path.addLine(to: CGPoint(x: 0, y:  wave.datum.peak + 20))
         
-        
         self.mutablePath = path
         
     }
-    
     
 }
