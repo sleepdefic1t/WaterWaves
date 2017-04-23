@@ -44,9 +44,11 @@ extension ViewController {
         
         waveViewController = WaveViewController()
         
-        #if os(iOS)
-            addChildViewController(waveViewController)
-        #endif
+    #if os(iOS)
+        
+        addChildViewController(waveViewController)
+        
+    #endif
         
         view.addSubview(waveViewController.view)
         

@@ -18,6 +18,8 @@ public struct TidePath {
     
     public init(for type: WaveType, _ wave: Wave) {
         
+        CATransaction.begin()
+        
         let path = CGMutablePath()
         
         let frame = wave.tides.layer.frame
@@ -62,6 +64,8 @@ public struct TidePath {
         path.addLine(to: CGPoint(x: 0, y:  wave.datum.peak + 20))
         
         self.mutablePath = path
+        
+        CATransaction.commit()
         
     }
     

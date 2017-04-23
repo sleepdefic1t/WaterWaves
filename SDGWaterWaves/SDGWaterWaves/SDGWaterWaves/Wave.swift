@@ -8,11 +8,17 @@
 
 open class Wave {
     
-    open var datum: Datum = Datum()
-    open var tides: Tides = Tides()
-    open var view: NSUIView = NSUIView()
+    open var datum: Datum!
+    open var tides: Tides!
+    open var view: NSUIView!
     
-    public init() {}
+    public init() {
+    
+        datum = Datum()
+        tides = Tides()
+        view = NSUIView()
+        
+    }
     
     open func setup(in view: NSUIView) {
         

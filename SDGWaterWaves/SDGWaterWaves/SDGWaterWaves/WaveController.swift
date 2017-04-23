@@ -88,9 +88,9 @@ extension WaveController {
                                           qos: .userInitiated,
                                           flags: .assignCurrentContext,
                                           execute: { _ in
-                                            
-                                            self.roll(wave, step.advanced(by: 1), limit-1)
-                                            self.update(wave)
+                    
+                    self.roll(wave, step.advanced(by: 1), limit-1)
+                    self.update(wave)
                                             
             })
             
@@ -128,28 +128,32 @@ extension WaveController {
         
     }
     
-    internal func move(_ wave: Wave, to newLevel: CGFloat, duration: Double? = 2.0) {
+    internal func move(_ wave: Wave, to newLevel: CGFloat, duration: Double? = 3.0) {
         
         CATransaction.begin()
+        CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
+        CATransaction.setAnimationDuration(duration!)
+        
+        let move = CABasicAnimation(keyPath: "position.y")
+        move.fromValue = wave.tides.layer.position.y
+        move.toValue = newLevel
         
         let spring = CASpringAnimation(keyPath: "position.y")
             spring.damping = 0.5
-            spring.initialVelocity = -5
+            spring.initialVelocity = 0.8
             spring.stiffness = 30
             spring.duration = spring.settlingDuration
             spring.fromValue = wave.tides.layer.position.y
             spring.toValue = wave.tides.layer.position.y + 5
         
-        let move = CABasicAnimation(keyPath: "position.y")
-            move.fillMode = kCAFillModeForwards
-            move.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            move.toValue = newLevel
+
         
         let group = CAAnimationGroup()
-            group.animations = [spring, move]
             group.isRemovedOnCompletion = false
-            group.fillMode = kCAFillModeForwards
-            group.duration = duration!
+            group.fillMode = kCAFillModeBoth
+//            group.duration = duration!
+        group.animations = [spring, move]
+
         
         wave.tides.layer.position.y = newLevel
         
@@ -160,3 +164,62 @@ extension WaveController {
     }
     
 }
+
+
+//let deltaY = event.deltaY
+//
+//print("deltaY = \(deltaY)")
+//
+//#endif
+//
+//let newLevel = //round(wave.tides.layer.frame.origin.y.advanced(by: deltaY))
+//    
+//    //        guard newLevel > 20 && newLevel < wave.view.frame.height-20 else { return }
+//    
+//    move(wave, to: newLevel)
+//start(wave)
+//
+//}
+////
+////internal func move(_ wave: Wave, to newLevel: CGFloat, duration: Double? = 2.0) {
+//
+//    print(newLevel)
+//    
+//    CATransaction.begin()
+//    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
+//    CATransaction.setAnimationDuration(duration!)
+//    
+//    let move = CABasicAnimation(keyPath: "position.y")
+//    //        move.fromValue = wave.tides.layer.frame.origin.y
+//    move.toValue = newLevel
+//    
+//    
+//    
+//    //
+//    //        let spring = CASpringAnimation(keyPath: "position.y")
+//    //            spring.damping = 0.5
+//    //            spring.initialVelocity = 0.8
+//    //            spring.stiffness = 30
+//    //            spring.duration = spring.settlingDuration
+//    //            spring.fromValue = wave.tides.layer.position.y
+//    //            spring.toValue = wave.tides.layer.position.y + 5
+//    //
+//    //
+//    
+//    let group = CAAnimationGroup()
+//    group.isRemovedOnCompletion = false
+//    group.fillMode = kCAFillModeBoth
+//    //            group.duration = duration!
+//    group.animations = [ move]
+//    
+//    wave.tides.layer.add(group, forKey: nil)
+//    
+//    //
+//    wave.tides.layer.frame.origin.y = newLevel
+//    
+//    
+//    CATransaction.commit()
+//    
+//    
+//}
+

@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		F42DCD8D1EAB5E7C00AA3F17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = SOURCE_ROOT; };
+		F42DCD911EACBE9600AA3F17 /* WaterWaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = WaterWaves.gif; path = ../../WaterWaves.gif; sourceTree = "<group>"; };
 		F47944301DFC1F9E006DF324 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		F4A582841DF89DC4001FCC2A /* SDGWaterWaves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDGWaterWaves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A582861DF89DC4001FCC2A /* SDGWaterWaves-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDGWaterWaves-iOS.h"; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 				F4A582751DF89DAB001FCC2A /* Products */,
 				F47944301DFC1F9E006DF324 /* LICENSE */,
 				F42DCD8D1EAB5E7C00AA3F17 /* README.md */,
+				F42DCD911EACBE9600AA3F17 /* WaterWaves.gif */,
 			);
 			sourceTree = "<group>";
 		};

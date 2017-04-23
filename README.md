@@ -10,6 +10,8 @@ Swift 3.1 macOS / iOS Cross-Platform Animated Water Waves Framework - No StoryBo
 [![BUILD](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat)](https://github.com/deadAlienRobotGhost/WaterWaves)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-brightgreen.svg?style=flat)](http://creativecommons.org/licenses/by-sa/4.0/)
 
+![WaterWaves](https://github.com/deadAlienRobotGhost/WaterWaves/blob/master/WaterWaves.gif)
+
 ## Usage
 
 ### Setup

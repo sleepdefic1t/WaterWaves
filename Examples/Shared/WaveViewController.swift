@@ -94,10 +94,20 @@ extension WaveViewController {
     
 #if os(macOS)
     
+    
     override func scrollWheel(with event: NSEvent) {
         
-        waveController.swell(wave, with: event)
-        waveController.start(wave)
+        DispatchQueue.main.asyncAfter(deadline: .now(),
+                                      qos: .userInitiated,
+                                      flags: .assignCurrentContext,
+                                      execute: {
+            
+            self.waveController.swell(self.wave, with: event)
+            self.waveController.start(self.wave)
+
+        
+        })
+        
         
     }
     
